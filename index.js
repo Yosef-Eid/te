@@ -12,6 +12,6 @@ app.use("/", user);
 app.use("/", auth);
 ConnectDb();
 const PORT = 5000;
-app.listen(PORT, () => {
+app.listen(PORT || 5000, () => {
   console.log("this server is running PORT 5000");
 });
